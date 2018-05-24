@@ -1,0 +1,42 @@
+digraph g {
+ node [
+fontsize = "10"
+shape = "Mrecord"
+style ="filled, bold"
+];
+
+ subgraph cluster_1 {
+node [style=filled];
+"nodoD1"
+[ label=" Nivel: 7",width ="1.5",fontcolor=black,shape=square,labelloc = b,image="no.png" ];
+"nodoD2"
+[ label=" Nivel: 6",width ="1.5",fontcolor=black,shape=square,labelloc = b,image="no.png" ];
+"nodoD3"
+[ label=" Nivel: 5",width ="1.5",fontcolor=black,shape=square,labelloc = b,image="no.png" ];
+"nodoD4"
+[ label=" Nivel: 4",width ="1.5",fontcolor=black,shape=square,labelloc = b,image="no.png" ];
+"nodoD5"
+[ label=" Nivel: 3",width ="1.5",fontcolor=black,shape=square,labelloc = b,image="no.png" ];
+"nodoD6"
+[ label=" Nivel: 2",width ="1.5",fontcolor=black,shape=square,labelloc = b,image="no.png" ];
+"nodoD7"
+[ label=" Nivel: 1 &#92;n Usuario ",width ="1.5",fontcolor=black,shape=square,labelloc = b,image="si.png" ];
+"nodoD1"-> "nodoD2";
+"nodoD2"-> "nodoD1";
+"nodoD2"-> "nodoD3";
+"nodoD3"-> "nodoD2";
+"nodoD3"-> "nodoD4";
+"nodoD4"-> "nodoD3";
+"nodoD4"-> "nodoD5";
+"nodoD5"-> "nodoD4";
+"nodoD5"-> "nodoD6";
+"nodoD6"-> "nodoD5";
+"nodoD6"-> "nodoD7";
+"nodoD7"-> "nodoD6";
+fontsize = "10"
+shape = "Mrecord"
+color="orange"
+style ="filled, bold"
+label ="Niveles"
+}
+}

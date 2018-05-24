@@ -1,0 +1,24 @@
+digraph g {
+ rankdir= "LR"node [
+fontsize = "10"
+shape = "Mrecord"
+color="darkslateblue"
+style ="filled, bold"
+];
+
+ subgraph cluster_1 {
+node [style=filled];
+"nodoM1"[label="Usuario: Sergio &#92;n Nivel: 1 &#92;n Puntos 40 &#92;n Tiempo: 0",width ="0.7",fontcolor=black,shape=square,labelloc = b ];
+"nodoM2"[label="Usuario: Sergio &#92;n Nivel: 1 &#92;n Puntos 90 &#92;n Tiempo: 28",width ="0.7",fontcolor=black,shape=square,labelloc = b ];
+"nodoM3"[label="Usuario: Sergio &#92;n Nivel: 2 &#92;n Puntos 0 &#92;n Tiempo: 0",width ="0.7",fontcolor=black,shape=square,labelloc = b ];
+"nodoM4"[label="Usuario: Sergio &#92;n Nivel: 2 &#92;n Puntos 20 &#92;n Tiempo: 0",width ="0.7",fontcolor=black,shape=square,labelloc = b ];
+"nodoM1"-> "nodoM2"[dir=back];
+"nodoM2"-> "nodoM3"[dir=back];
+"nodoM3"-> "nodoM4"[dir=back];
+fontsize = "10"
+shape = "Mrecord"
+color="orange"
+style ="filled, bold"
+label ="Lista Modificada"
+}
+}

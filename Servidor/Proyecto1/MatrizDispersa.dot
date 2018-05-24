@@ -1,0 +1,51 @@
+digraph g {
+ 
+ subgraph cluster_1 {
+"nodoD2"[label="Nivel: 2",style=filled,shape=square];
+
+"nodoF1"[label="Y: 2",style=filled,shape=square];
+"nodoM1"[label="1",width ="0.7",style=filled,fontcolor=black,shape=square,labelloc = b,image="enemigo2.png" ];
+
+"nodoF2"[label="Y: 4",style=filled,shape=square];
+"nodoM8"[label="8",width ="0.7",style=filled,fontcolor=black,shape=square,labelloc = b,image="enemigo2.png" ];
+
+"nodoF3"[label="Y: 6",style=filled,shape=square];
+"nodoM6"[label="6",width ="0.7",style=filled,fontcolor=black,shape=square,labelloc = b,image="enemigo2.png" ];
+
+"nodoF4"[label="Y: 7",style=filled,shape=square];
+"nodoM7"[label="7",width ="0.7",style=filled,fontcolor=black,shape=square,labelloc = b,image="enemigo2.png" ];
+"nodoM4"[label="4",width ="0.7",style=filled,fontcolor=black,shape=square,labelloc = b,image="enemigo2.png" ];
+
+"nodoC1"[label="X: 1",style=filled,shape=square];
+"nodoC2"[label="X: 3",style=filled,shape=square];
+"nodoC3"[label="X: 4",style=filled,shape=square];
+"nodoC4"[label="X: 7",style=filled,shape=square];
+{rank = same; "nodoC1";"nodoC2";"nodoC3";"nodoC4";"nodoD2";}
+{rank = same; "nodoM1";"nodoF1";}
+{rank = same; "nodoM8";"nodoF2";}
+{rank = same; "nodoM6";"nodoF3";}
+{rank = same; "nodoM4";"nodoM7";"nodoF4";}
+"nodoC2"-> "nodoC1"[dir=both,color="black:blue"];
+"nodoC1"-> "nodoM8"[dir=both,color="blue:black"];
+"nodoM7"-> "nodoM8"[dir=both,color="black:blue"];
+"nodoC3"-> "nodoC2"[dir=both,color="black:blue"];
+"nodoC2"-> "nodoM6"[dir=both,color="blue:black"];
+"nodoC4"-> "nodoC3"[dir=both,color="black:blue"];
+"nodoC3"-> "nodoM1"[dir=both,color="blue:black"];
+"nodoC4"-> "nodoM4"[dir=both,color="blue:black"];
+"nodoC1"-> "nodoD2"[dir=both,color="black:blue"];
+
+"nodoF1"-> "nodoF2"[dir=both,color="blue:black"];
+"nodoM1"-> "nodoF1"[dir=both,color="black:blue"];
+"nodoF2"-> "nodoF3"[dir=both,color="blue:black"];
+"nodoM8"-> "nodoF2"[dir=both,color="black:blue"];
+"nodoF3"-> "nodoF4"[dir=both,color="blue:black"];
+"nodoM6"-> "nodoF3"[dir=both,color="black:blue"];
+"nodoF4"-> "nodoM7"[dir=both,color="blue:black"];
+"nodoM7"-> "nodoM4"[dir=both,color="blue:black"];
+"nodoD2"-> "nodoF1"[dir=both,color="blue:black"];
+color="orange"
+style ="filled, bold"
+label ="Matriz Dispersa"
+}
+}

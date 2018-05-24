@@ -1,0 +1,7 @@
+digraph grafica{
+ rankdir=TB;
+node [
+shape =record, fillcolor=seashell2, style =filled, ];
+"nodo1"
+[ label=" Sergio &#92;n Nivel: 1 &#92;n Tiempo: 0 &#92;n Puntaje: 0"];
+}

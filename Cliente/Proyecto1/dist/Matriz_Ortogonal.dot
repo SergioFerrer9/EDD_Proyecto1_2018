@@ -1,0 +1,214 @@
+digraph g {
+node [
+fontsize = "10"
+shape = "Mrecord"
+];
+
+subgraph cluster_1 {
+"nodoD1"[label="Nivel1",style=filled];
+"nodoF1"[label="Fila1",style=filled];
+"nodoM1"[label="1 , 1",style=filled];
+"nodoM2"[label="1 , 2",style=filled];
+"nodoM3"[label="1 , 3",style=filled];
+"nodoM4"[label="1 , 4",style=filled];
+"nodoM5"[label="1 , 5",style=filled];
+"nodoM6"[label="1 , 6",style=filled];
+"nodoM7"[label="1 , 7",style=filled];
+
+
+"nodoF2"[label="Fila2",style=filled];
+"nodoM8"[label="2 , 1",style=filled];
+"nodoM9"[label="2 , 2",style=filled];
+"nodoM10"[label="2 , 3",style=filled];
+"nodoM11"[label="2 , 4",style=filled];
+"nodoM12"[label="2 , 5",style=filled];
+"nodoM13"[label="2 , 6",style=filled];
+"nodoM14"[label="2 , 7",style=filled];
+
+
+"nodoF3"[label="Fila3",style=filled];
+"nodoM15"[label="3 , 1",style=filled];
+"nodoM16"[label="3 , 2",style=filled];
+"nodoM17"[label="3 , 3",style=filled];
+"nodoM18"[label="3 , 4",style=filled];
+"nodoM19"[label="3 , 5",style=filled];
+"nodoM20"[label="3 , 6",style=filled];
+"nodoM21"[label="3 , 7",style=filled];
+
+
+"nodoF4"[label="Fila4",style=filled];
+"nodoM22"[label="4 , 1",style=filled];
+"nodoM23"[label="4 , 2",style=filled];
+"nodoM24"[label="4 , 3",style=filled];
+"nodoM25"[label="4 , 4",style=filled];
+"nodoM26"[label="4 , 5",style=filled];
+"nodoM27"[label="4 , 6",style=filled];
+"nodoM28"[label="4 , 7",style=filled];
+
+
+"nodoF5"[label="Fila5",style=filled];
+"nodoM29"[label="5 , 1",style=filled];
+"nodoM30"[label="5 , 2",style=filled];
+"nodoM31"[label="5 , 3",style=filled];
+"nodoM32"[label="5 , 4",style=filled];
+"nodoM33"[label="5 , 5",style=filled];
+"nodoM34"[label="5 , 6",style=filled];
+"nodoM35"[label="5 , 7",style=filled];
+
+
+"nodoF6"[label="Fila6",style=filled];
+"nodoM36"[label="6 , 1",style=filled];
+"nodoM37"[label="6 , 2",style=filled];
+"nodoM38"[label="6 , 3",style=filled];
+"nodoM39"[label="6 , 4",style=filled];
+"nodoM40"[label="6 , 5",style=filled];
+"nodoM41"[label="6 , 6",style=filled];
+"nodoM42"[label="6 , 7",style=filled];
+
+
+"nodoF7"[label="Fila7",style=filled];
+"nodoM43"[label="7 , 1",style=filled];
+"nodoM44"[label="7 , 2",style=filled];
+"nodoM45"[label="7 , 3",style=filled];
+"nodoM46"[label="7 , 4",style=filled];
+"nodoM47"[label="7 , 5",style=filled];
+"nodoM48"[label="7 , 6",style=filled];
+"nodoM49"[label="7 , 7",style=filled];
+
+
+"nodoC1"[label="Columna1",style=filled];
+"nodoC2"[label="Columna2",style=filled];
+"nodoC3"[label="Columna3",style=filled];
+"nodoC4"[label="Columna4",style=filled];
+"nodoC5"[label="Columna5",style=filled];
+"nodoC6"[label="Columna6",style=filled];
+"nodoC7"[label="Columna7",style=filled];
+
+
+{rank = same;"nodoC1";"nodoC2";"nodoC3";"nodoC4";"nodoC5";"nodoC6";"nodoC7";"nodoD1";}
+{rank = same;"nodoM7";"nodoM6";"nodoM5";"nodoM4";"nodoM3";"nodoM2";"nodoM1";"nodoF1";}
+{rank = same;"nodoM14";"nodoM13";"nodoM12";"nodoM11";"nodoM10";"nodoM9";"nodoM8";"nodoF2";}
+{rank = same;"nodoM21";"nodoM20";"nodoM19";"nodoM18";"nodoM17";"nodoM16";"nodoM15";"nodoF3";}
+{rank = same;"nodoM28";"nodoM27";"nodoM26";"nodoM25";"nodoM24";"nodoM23";"nodoM22";"nodoF4";}
+{rank = same;"nodoM35";"nodoM34";"nodoM33";"nodoM32";"nodoM31";"nodoM30";"nodoM29";"nodoF5";}
+{rank = same;"nodoM42";"nodoM41";"nodoM40";"nodoM39";"nodoM38";"nodoM37";"nodoM36";"nodoF6";}
+{rank = same;"nodoM49";"nodoM48";"nodoM47";"nodoM46";"nodoM45";"nodoM44";"nodoM43";"nodoF7";}
+"nodoC2"-> "nodoC1"[dir=both,color="black:blue"];
+"nodoC1"-> "nodoM1"[dir=both,color="black:blue"];
+"nodoM8"-> "nodoM1"[dir=both,color="black:blue"];
+"nodoM15"-> "nodoM8"[dir=both,color="black:blue"];
+"nodoM22"-> "nodoM15"[dir=both,color="black:blue"];
+"nodoM29"-> "nodoM22"[dir=both,color="black:blue"];
+"nodoM36"-> "nodoM29"[dir=both,color="black:blue"];
+"nodoM43"-> "nodoM36"[dir=both,color="black:blue"];
+"nodoC3"-> "nodoC2"[dir=both,color="black:blue"];
+"nodoC2"-> "nodoM2"[dir=both,color="black:blue"];
+"nodoM9"-> "nodoM2"[dir=both,color="black:blue"];
+"nodoM16"-> "nodoM9"[dir=both,color="black:blue"];
+"nodoM23"-> "nodoM16"[dir=both,color="black:blue"];
+"nodoM30"-> "nodoM23"[dir=both,color="black:blue"];
+"nodoM37"-> "nodoM30"[dir=both,color="black:blue"];
+"nodoM44"-> "nodoM37"[dir=both,color="black:blue"];
+"nodoC4"-> "nodoC3"[dir=both,color="black:blue"];
+"nodoC3"-> "nodoM3"[dir=both,color="black:blue"];
+"nodoM10"-> "nodoM3"[dir=both,color="black:blue"];
+"nodoM17"-> "nodoM10"[dir=both,color="black:blue"];
+"nodoM24"-> "nodoM17"[dir=both,color="black:blue"];
+"nodoM31"-> "nodoM24"[dir=both,color="black:blue"];
+"nodoM38"-> "nodoM31"[dir=both,color="black:blue"];
+"nodoM45"-> "nodoM38"[dir=both,color="black:blue"];
+"nodoC5"-> "nodoC4"[dir=both,color="black:blue"];
+"nodoC4"-> "nodoM4"[dir=both,color="black:blue"];
+"nodoM11"-> "nodoM4"[dir=both,color="black:blue"];
+"nodoM18"-> "nodoM11"[dir=both,color="black:blue"];
+"nodoM25"-> "nodoM18"[dir=both,color="black:blue"];
+"nodoM32"-> "nodoM25"[dir=both,color="black:blue"];
+"nodoM39"-> "nodoM32"[dir=both,color="black:blue"];
+"nodoM46"-> "nodoM39"[dir=both,color="black:blue"];
+"nodoC6"-> "nodoC5"[dir=both,color="black:blue"];
+"nodoC5"-> "nodoM5"[dir=both,color="black:blue"];
+"nodoM12"-> "nodoM5"[dir=both,color="black:blue"];
+"nodoM19"-> "nodoM12"[dir=both,color="black:blue"];
+"nodoM26"-> "nodoM19"[dir=both,color="black:blue"];
+"nodoM33"-> "nodoM26"[dir=both,color="black:blue"];
+"nodoM40"-> "nodoM33"[dir=both,color="black:blue"];
+"nodoM47"-> "nodoM40"[dir=both,color="black:blue"];
+"nodoC7"-> "nodoC6"[dir=both,color="black:blue"];
+"nodoC6"-> "nodoM6"[dir=both,color="black:blue"];
+"nodoM13"-> "nodoM6"[dir=both,color="black:blue"];
+"nodoM20"-> "nodoM13"[dir=both,color="black:blue"];
+"nodoM27"-> "nodoM20"[dir=both,color="black:blue"];
+"nodoM34"-> "nodoM27"[dir=both,color="black:blue"];
+"nodoM41"-> "nodoM34"[dir=both,color="black:blue"];
+"nodoM48"-> "nodoM41"[dir=both,color="black:blue"];
+"nodoC7"-> "nodoM7"[dir=both,color="black:blue"];
+"nodoM7"-> "nodoM14"[dir=both,color="black:blue"];
+"nodoM14"-> "nodoM21"[dir=both,color="black:blue"];
+"nodoM21"-> "nodoM28"[dir=both,color="black:blue"];
+"nodoM28"-> "nodoM35"[dir=both,color="black:blue"];
+"nodoM35"-> "nodoM42"[dir=both,color="black:blue"];
+"nodoM42"-> "nodoM49"[dir=both,color="black:blue"];
+"nodoC1"-> "nodoD1"[dir=both,color="black:blue"];
+
+
+"nodoF1"-> "nodoF2"[dir=both,color="black:blue"];
+"nodoM1"-> "nodoF1"[dir=both,color="black:blue"];
+"nodoM1"-> "nodoM2"[dir=both,color="black:blue"];
+"nodoM2"-> "nodoM3"[dir=both,color="black:blue"];
+"nodoM3"-> "nodoM4"[dir=both,color="black:blue"];
+"nodoM4"-> "nodoM5"[dir=both,color="black:blue"];
+"nodoM5"-> "nodoM6"[dir=both,color="black:blue"];
+"nodoM6"-> "nodoM7"[dir=both,color="black:blue"];
+"nodoF2"-> "nodoF3"[dir=both,color="black:blue"];
+"nodoM8"-> "nodoF2"[dir=both,color="black:blue"];
+"nodoM8"-> "nodoM9"[dir=both,color="black:blue"];
+"nodoM9"-> "nodoM10"[dir=both,color="black:blue"];
+"nodoM10"-> "nodoM11"[dir=both,color="black:blue"];
+"nodoM11"-> "nodoM12"[dir=both,color="black:blue"];
+"nodoM12"-> "nodoM13"[dir=both,color="black:blue"];
+"nodoM13"-> "nodoM14"[dir=both,color="black:blue"];
+"nodoF3"-> "nodoF4"[dir=both,color="black:blue"];
+"nodoM15"-> "nodoF3"[dir=both,color="black:blue"];
+"nodoM15"-> "nodoM16"[dir=both,color="black:blue"];
+"nodoM16"-> "nodoM17"[dir=both,color="black:blue"];
+"nodoM17"-> "nodoM18"[dir=both,color="black:blue"];
+"nodoM18"-> "nodoM19"[dir=both,color="black:blue"];
+"nodoM19"-> "nodoM20"[dir=both,color="black:blue"];
+"nodoM20"-> "nodoM21"[dir=both,color="black:blue"];
+"nodoF4"-> "nodoF5"[dir=both,color="black:blue"];
+"nodoM22"-> "nodoF4"[dir=both,color="black:blue"];
+"nodoM22"-> "nodoM23"[dir=both,color="black:blue"];
+"nodoM23"-> "nodoM24"[dir=both,color="black:blue"];
+"nodoM24"-> "nodoM25"[dir=both,color="black:blue"];
+"nodoM25"-> "nodoM26"[dir=both,color="black:blue"];
+"nodoM26"-> "nodoM27"[dir=both,color="black:blue"];
+"nodoM27"-> "nodoM28"[dir=both,color="black:blue"];
+"nodoF5"-> "nodoF6"[dir=both,color="black:blue"];
+"nodoM29"-> "nodoF5"[dir=both,color="black:blue"];
+"nodoM29"-> "nodoM30"[dir=both,color="black:blue"];
+"nodoM30"-> "nodoM31"[dir=both,color="black:blue"];
+"nodoM31"-> "nodoM32"[dir=both,color="black:blue"];
+"nodoM32"-> "nodoM33"[dir=both,color="black:blue"];
+"nodoM33"-> "nodoM34"[dir=both,color="black:blue"];
+"nodoM34"-> "nodoM35"[dir=both,color="black:blue"];
+"nodoF6"-> "nodoF7"[dir=both,color="black:blue"];
+"nodoM36"-> "nodoF6"[dir=both,color="black:blue"];
+"nodoM36"-> "nodoM37"[dir=both,color="black:blue"];
+"nodoM37"-> "nodoM38"[dir=both,color="black:blue"];
+"nodoM38"-> "nodoM39"[dir=both,color="black:blue"];
+"nodoM39"-> "nodoM40"[dir=both,color="black:blue"];
+"nodoM40"-> "nodoM41"[dir=both,color="black:blue"];
+"nodoM41"-> "nodoM42"[dir=both,color="black:blue"];
+"nodoF7"-> "nodoM43"[dir=both,color="black:blue"];
+"nodoM43"-> "nodoM44"[dir=both,color="black:blue"];
+"nodoM44"-> "nodoM45"[dir=both,color="black:blue"];
+"nodoM45"-> "nodoM46"[dir=both,color="black:blue"];
+"nodoM46"-> "nodoM47"[dir=both,color="black:blue"];
+"nodoM47"-> "nodoM48"[dir=both,color="black:blue"];
+"nodoM48"-> "nodoM49"[dir=both,color="black:blue"];
+"nodoD1"-> "nodoF1"[dir=both,color="black:blue"];
+edge [splines="true"];
+color="orange"
+style ="filled, bold"
+label ="Ortogonal"
+}}

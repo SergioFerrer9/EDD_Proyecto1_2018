@@ -1,0 +1,17 @@
+digraph g {
+ node [
+fontsize = "10"
+shape = "Mrecord"
+style ="filled, bold"
+];
+
+ subgraph cluster_1 {
+node [style=filled];
+"nodoP1"[label="1",width ="0.7",fontcolor=black,shape=square,labelloc = b,image="enemigo1.png" ];
+fontsize = "10"
+shape = "Mrecord"
+color="orange"
+style ="filled, bold"
+label ="Pila"
+}
+}
